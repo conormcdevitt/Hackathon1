@@ -77,6 +77,7 @@
 
 - Dataset was taken from https://www.kaggle.com/datasets/hellbuoy/car-price-prediction?resource=download
 - Used chatgpt to get correct notation for the function for dropping columns from dataset, tried to find in LMS but was taking too long!
+- Used chatgpt to see if any of the enginetype/fuelsystem abbreviations meant the same thing
 
 ### Media
 
