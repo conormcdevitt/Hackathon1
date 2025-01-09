@@ -7,19 +7,26 @@
 
 ## Dataset Content
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
-
-
-## Business Requirements
-* Describe your business requirements
+* My dataset is based on Car Price Prediction, it was taken from https://www.kaggle.com/datasets/hellbuoy/car-price-prediction/data
+* It includes 25 columns that include various different pieces of information on different cars that were purchased including their price.
+* It includes 205 rows or entries for each column.
 
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
-
+* After cleaning the data, I have reduced the number of columns down to 15. I expect a number of these variables to be strongly correlated with increased prices, and others not so much.
+  For example: I expect variables like horsepower, enginesize, cylinder number, wheelbase, curbweight, carbody, drivewheel and aspiration to be very influential to the price.
+               I expect variables such as fuelsystem, brand and mpg to be somewhat responsible for increased prices.
+               I expect fuel type to not affect pricing too much and I feel engine location may have too entries with rear engines to draw too many conclusions.
+* I would expect to be able to validate them throw plotting numerous types of graphs/charts and clearly visualising how certain variables show significant price changes depending on  
+  how high/low they are when it comes to certain numeric variables, and by what type they are when it comes to certain categorical variables. I expect these graphs/chars to show less significant changes for certain variables, proving my hypotheses to be true.
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
 * Why did you choose the research methodologies you used?
+
+* I initially plan to download the dataset and load it into a dataframe using pandas, using various functions to get an idea of what kind of information is in the dataset.
+* I will then try to clean the data by removing any missing values.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
