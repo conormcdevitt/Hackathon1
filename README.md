@@ -75,9 +75,8 @@
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Dataset was taken from https://www.kaggle.com/datasets/hellbuoy/car-price-prediction?resource=download
+- Used chatgpt to get correct notation for the function for dropping columns from dataset, tried to find in LMS but was taking too long!
 
 ### Media
 
