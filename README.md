@@ -26,7 +26,7 @@
 * Why did you choose the research methodologies you used?
 
 * I initially plan to download the dataset and load it into a dataframe using pandas, using various functions to get an idea of what kind of information is in the dataset.
-* I will then try to clean the data by removing any missing values.
+* I will then try to clean the data by removing any missing values, duplicate values etcu
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
