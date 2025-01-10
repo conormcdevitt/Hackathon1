@@ -1,19 +1,17 @@
-# Project XYZ
+# Car Price Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Car Price Analysis** is a data analysis tool designed to show how different variables affect the price of cars.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
 * My dataset is based on Car Price Prediction, it was taken from https://www.kaggle.com/datasets/hellbuoy/car-price-prediction/data
 * It includes 25 columns that include various different pieces of information on different cars that were purchased including their price.
 * It includes 205 rows or entries for each column.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
 * After cleaning the data, I have reduced the number of columns down to 15. I expect a number of these variables to be strongly correlated with increased prices, and others not so much.
   For example: I expect variables like horsepower, enginesize, cylinder number, wheelbase, curbweight, carbody, drivewheel and aspiration to be very influential to the price.
                I expect variables such as fuelsystem, brand and mpg to be somewhat responsible for increased prices.
@@ -21,64 +19,54 @@
 * I would expect to be able to validate them throw plotting numerous types of graphs/charts and clearly visualising how certain variables show significant price changes depending on  
   how high/low they are when it comes to certain numeric variables, and by what type they are when it comes to certain categorical variables. I expect these graphs/chars to show less significant changes for certain variables, proving my hypotheses to be true.
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
 
 * I initially plan to download the dataset and load it into a dataframe using pandas, using various functions to get an idea of what kind of information is in the dataset.
 * I will then try to clean the data by removing any missing values, duplicate values etc as well as encoding the categorical variables.
 * I will then save the data to a new csv file and then use that data to create a few basic charts using matplotlib and seaborn.
+* I will use plotly to create more interactive charts and graphs that convey information better.
+* I will try try use the charts to explain the correlation between price and other variables.
+* I chose these methods mainly based on what we had been taught through the LMS.
+
 
 
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* Used pandas to extract data from the csv file into a dataframe and then edited the contents of the dataframe to suit my needs. 
+* Used feature engine and pipeline in order to encode the categorical variables so that they could be used in charts/graphs more easily later in the project.
+* Used matplotlib, seaborn and plotly in order to express the data from the dataframe in a visual format.
+* Used generative AI to help decide which variables from the dataset I should drop, whether because they were redundant because of other variables present, or if they were just not related to price whatsoever. When I decided to drop even more variables than I had originally planned, I used AI to give me ideas on what variables I should prioritise keeping.
+* When I was starting to make my charts/graphs, I felt I was running out of time so I used generative AI to get an idea of what variables I should prioritise when making comparisons as well as which charts/graphs I should use to display the information.
+
+
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
+
 * Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+
+* In terms of gaps in my knowledge, there were a lot of things I knew I could do with pandas, seaborn, plotly etc. but when it came to implementing them, I was unsure of the correct notation/syntax to use at times and had to go back to the LMS or use AI(mostly when I couldn't find it in the LMS) in order to view the examples again in order to display/extract/edit the information I wanted.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
 
-## Deployment
-### Heroku
+* The main challenge I faced was organising everything I had to do from start to finish as this is the first project of this kind/scale I have ever done in Data Analytics. I found myself getting too zoned in on what I was doing and had to do next at times and that led to me wasting time and having to go back and redo sections because I hadn't done things I was supposed to do before moving on to the next task.
+* I spent a lot of time on the data cleaning stage of the project and because of the amount of different columns/variables I was going to end up with, I decided to drop a lot more columns than I had initially planned to, and also decided not to encode one variable because I felt it would've added too many new columns and also after asking AI what I should do in that regard I felt that it wasn't necessary because of the libraries I was using and the type of charts/graphs I was going to be showing.
+* It was also a challenge remembering all the various function names for various purposes that we have covered so far during the course, I found I had to go back to the LMS or ask AI to get the names and syntax for certain functions that I was aware of, but had forgotten certain parts of it which led to errors in the code.
+* I plan to try get a better understanding of featureengine and pipeline in order to minimize the time spent/wasted deciding on how to encode certain variables.
+* I hope to get more experience using various graphs/charts so that I no longer have to defer to the LMS as much to look at examples.
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
 
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Pandas was used to create the dataframe and read/edit the data from the dataset, it was then used to create a new file for the 'clean' data.
+* Matplotlib, seaborn and plotly were used to create various charts/graphs for visualisation of the data in the new csv file
+* Used sklearn and pipeline from feature engine in order to convert some of the categorical variables using OneHotEncoder so that they were given numerical values so I could better utilise them in the visualisation stage.
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
@@ -87,14 +75,7 @@
 - Used chatgpt to see if any of the enginetype/fuelsystem abbreviations meant the same thing
 - Used LMS for OHE transformation examples and replaced variable names
 - Used chatgpt to decide what to do with CarName in terms of encoding, decided to leave it as is based on the information I received
-- Used LMS for some examples when making graphs with plotly and seaborn
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- Used LMS for some examples when making graphs with matplotlib and seaborn
+- Mostly used LMS for examples on the plots made using plotly, used chatgpt to edit the height/width of the scatter matrix as I couldn't find it in the LMS
 
 
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
