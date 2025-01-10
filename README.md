@@ -26,10 +26,10 @@
 * Why did you choose the research methodologies you used?
 
 * I initially plan to download the dataset and load it into a dataframe using pandas, using various functions to get an idea of what kind of information is in the dataset.
-* I will then try to clean the data by removing any missing values, duplicate values etcu
+* I will then try to clean the data by removing any missing values, duplicate values etc as well as encoding the categorical variables.
+* I will then save the data to a new csv file and then use that data to create a few basic charts using matplotlib and seaborn.
 
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
@@ -87,6 +87,7 @@
 - Used chatgpt to see if any of the enginetype/fuelsystem abbreviations meant the same thing
 - Used LMS for OHE transformation examples and replaced variable names
 - Used chatgpt to decide what to do with CarName in terms of encoding, decided to leave it as is based on the information I received
+- Used LMS for some examples when making graphs with plotly and seaborn
 
 ### Media
 
